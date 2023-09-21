@@ -4,7 +4,7 @@
 *@dest: Pointer to the destination string.
 *@src: Pointer to the source string.
 *@n: input number.
-*return: to dest.
+*Return: Return  dest.
 */
 char *_strncpy(char *dest, char *src, int n)
 {
