@@ -15,10 +15,13 @@ int j;
 	{
 		len_dest++;
 	}
-	for (j = 0; src[j] && j < n; j++)
+	for (j = 0; src[j] && n > 0; j++, n--)
 	{
 		dest[len_dest + j] = src[j];
 	}
+	if (n > 0)
+	{
 	dest[len_dest + j] = '\0';
+	}
 	return (dest);
 }
