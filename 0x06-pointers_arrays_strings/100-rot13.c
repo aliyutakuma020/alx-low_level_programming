@@ -19,6 +19,7 @@ char takuma[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 		if (s[i] == aliyu[j])
 		{
 			s[i] = takuma[j];
+			break;
 		}
 	}
 	}
