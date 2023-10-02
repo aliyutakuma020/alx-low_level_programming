@@ -1,2 +1,2 @@
-Libraries in C.
-The static and dynamic library.
+C libraries.
+Static and dynamic

@@ -1,25 +1,21 @@
 #include "main.h"
 /**
-*_strncpy - copies a string to another.
-*@dest: first pointer.
-*@src: second pointer.
-*@n: number of characters.
-*Return: return (dest).
-*/
-char *_strncpy(char *dest, char *src, int n)
+ *_memcpy - Copies memory area.
+ *@dest: memory where is stored.
+ *@src: memory where is copied.
+ *@n: number of bytes.
+ *
+ *Return: return dest.
+ */
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-int i = 0;
-int j = 0;
-	while (dest[i] != '\0')
+	int r = 0;
+	int i = n;
+
+	for (; r < i; r++)
 	{
-		i++;
+		dest[r] = src[r];
+		n--;
 	}
-	while (src[j] != '\0' && j < n)
-	{
-		dest[i] = src[j];
-		i++;
-		j++;
-	}
-	dest[i] = '\0';
 	return (dest);
 }
