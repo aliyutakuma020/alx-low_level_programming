@@ -3,17 +3,15 @@
 #include <stdio.h>
 #include "3-calc.h"
 /**
- * main - Prints the result of a simple operation.
- * @argc: Number of arguments supplied to the program.
+ * main - Prints result of simple operation.
+ * @argc: The number of arguments of the program.
  * @argv: Array of pointers to the arguments.
- *
- * Return: return (0).
+ * Return: Always 0.
  */
 int main(int __attribute__((__unused__)) argc, char *argv[])
 {
-int num1; 
-int num2;
-char *op;
+	int num1, num2;
+	char *op;
 
 	if (argc != 4)
 	{
@@ -37,6 +35,8 @@ char *op;
 		printf("Error\n");
 		exit(100);
 	}
+
 	printf("%d\n", get_op_func(op)(num1, num2));
+
 	return (0);
 }
