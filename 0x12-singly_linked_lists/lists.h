@@ -7,7 +7,7 @@
 
 /**
  * struct list_s - linked list.
- * @s: string.
+ * @str: string.
  * @len: length.
  * @next: points to the next node.
  * Description: This structure represents a node in a singly linked list.
