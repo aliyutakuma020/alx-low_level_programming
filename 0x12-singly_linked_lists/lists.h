@@ -6,8 +6,8 @@
 #include <stdlib.h>
 
 /**
- * struct list_t - linked list.
- *@s: string.
+ * struct list_s - linked list.
+ * @s: string.
  * @len: length.
  * @next: points to the next node.
  * Description: This structure represents a node in a singly linked list.
